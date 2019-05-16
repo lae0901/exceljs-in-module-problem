@@ -1,0 +1,23 @@
+{
+  "name": "exceljs-in-module-problem",
+  "version": "1.0.0",
+  "description": "",
+  "main": "exceljs.min.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lae0901/exceljs-in-module-problem.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lae0901/exceljs-in-module-problem/issues"
+  },
+  "homepage": "https://github.com/lae0901/exceljs-in-module-problem#readme",
+  "devDependencies": {
+    "webpack": "^4.31.0"
+  }
+}
