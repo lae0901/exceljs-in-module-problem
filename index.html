@@ -15,13 +15,20 @@
   <button id="btn3">webpack excel</button>
 
   <script type="module">
-    import * as ExcelJS from './exceljs.min.js';
+    import { excel_newWorkbook, excel_createExcelFile, excel_writeFile } from './src/excel-module.js' ;
+    import { ejs } from './src/excel-embedded.js' ;
+    // import * as ExcelJS from './exceljs.min.js';
 
     window.onload = () =>
     {
-      btn2.addEventListener("click", () =>
+      btn2.addEventListener("click", async () =>
       {
-        const wb = new ExcelJS.Workbook()
+        const wb = new ejs( );
+        // const wb = excel_newWorkbook( ) ;
+        excel_createExcelFile(wb) ;
+        await excel_writeFile( wb, 'steve') ;
+
+        // const wb = new ExcelJS.Workbook()
       });
     }
   </script>
